@@ -1,0 +1,53 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.OverviewView">
+  <ScrollViewer Margin="24,20,12,8">
+    <StackPanel>
+      <TextBlock Classes="h1" Text="Обзор"/>
+      <UniformGrid Columns="4">
+        <Border Classes="card"><StackPanel Spacing="4"><TextBlock Classes="muted" Text="Проекты"/><TextBlock Classes="big" Text="12"/><TextBlock Classes="muted" Text="Активных проектов"/></StackPanel></Border>
+        <Border Classes="card"><StackPanel Spacing="4"><TextBlock Classes="muted" Text="Задачи"/><TextBlock Classes="big" Text="48"/><TextBlock Classes="muted" Text="В работе"/></StackPanel></Border>
+        <Border Classes="card"><StackPanel Spacing="4"><TextBlock Classes="muted" Text="Команда"/><TextBlock Classes="big" Text="8"/><TextBlock Classes="muted" Text="Участников"/></StackPanel></Border>
+        <Border Classes="card"><StackPanel Spacing="4"><TextBlock Classes="muted" Text="Сроки"/><TextBlock Classes="big" Text="5" Foreground="#E5484D"/><TextBlock Text="Просрочено" FontSize="12" Foreground="#E5484D"/></StackPanel></Border>
+      </UniformGrid>
+
+      <Grid ColumnDefinitions="*,Auto">
+        <StackPanel>
+          <Border Classes="card">
+            <StackPanel Spacing="14">
+              <TextBlock Text="Активные проекты" FontWeight="SemiBold"/>
+              <StackPanel Spacing="8">
+                <Grid ColumnDefinitions="*,120,40"><TextBlock Text="Avalonia UI Redesign"/><Border Classes="chip design" Grid.Column="1"><TextBlock Text="Дизайн"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="65%"/></Grid>
+                <ProgressBar Value="65" Height="4" Foreground="#5B45D6"/>
+              </StackPanel>
+              <StackPanel Spacing="8">
+                <Grid ColumnDefinitions="*,120,40"><TextBlock Text="Мобильное приложение"/><Border Classes="chip dev" Grid.Column="1"><TextBlock Text="Разработка"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="40%"/></Grid>
+                <ProgressBar Value="40" Height="4" Foreground="#4F8DF7"/>
+              </StackPanel>
+              <StackPanel Spacing="8">
+                <Grid ColumnDefinitions="*,120,40"><TextBlock Text="Корпоративный сайт"/><Border Classes="chip dev" Grid.Column="1"><TextBlock Text="Разработка"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="80%"/></Grid>
+                <ProgressBar Value="80" Height="4" Foreground="#2FB464"/>
+              </StackPanel>
+            </StackPanel>
+          </Border>
+
+          <Border Classes="card">
+            <StackPanel Spacing="10">
+              <TextBlock Text="Последние задачи" FontWeight="SemiBold"/>
+              <Grid ColumnDefinitions="*,120,90"><CheckBox Content="Разработать макет главной страницы"/><Border Classes="chip design" Grid.Column="1"><TextBlock Text="Дизайн"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="15.05.2024" VerticalAlignment="Center"/></Grid>
+              <Grid ColumnDefinitions="*,120,90"><CheckBox Content="Реализовать авторизацию"/><Border Classes="chip dev" Grid.Column="1"><TextBlock Text="Разработка"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="14.05.2024" VerticalAlignment="Center"/></Grid>
+              <Grid ColumnDefinitions="*,120,90"><CheckBox Content="Подготовить презентацию"/><Border Classes="chip mkt" Grid.Column="1"><TextBlock Text="Маркетинг"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="13.05.2024" VerticalAlignment="Center"/></Grid>
+            </StackPanel>
+          </Border>
+        </StackPanel>
+
+        <Border Classes="card" Grid.Column="1" VerticalAlignment="Top">
+          <StackPanel Spacing="8">
+            <TextBlock Text="Календарь" FontWeight="SemiBold"/>
+            <Calendar DisplayDate="2024-05-15" SelectedDate="2024-05-15"/>
+          </StackPanel>
+        </Border>
+      </Grid>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

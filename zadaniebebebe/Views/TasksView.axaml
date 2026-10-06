@@ -1,0 +1,16 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.TasksView">
+  <ScrollViewer Margin="24,20,12,8">
+    <StackPanel>
+      <Grid ColumnDefinitions="*,Auto"><TextBlock Classes="h1" Text="Задачи"/></Grid>
+      <Border Classes="card">
+        <StackPanel Spacing="12">
+          <Grid ColumnDefinitions="*,120,90"><CheckBox Content="Разработать макет главной страницы"/><Border Classes="chip design" Grid.Column="1"><TextBlock Text="Дизайн"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="15.05.2024" VerticalAlignment="Center"/></Grid>
+          <Grid ColumnDefinitions="*,120,90"><CheckBox Content="Реализовать авторизацию"/><Border Classes="chip dev" Grid.Column="1"><TextBlock Text="Разработка"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="14.05.2024" VerticalAlignment="Center"/></Grid>
+          <Grid ColumnDefinitions="*,120,90"><CheckBox Content="Подготовить презентацию"/><Border Classes="chip mkt" Grid.Column="1"><TextBlock Text="Маркетинг"/></Border><TextBlock Classes="muted" Grid.Column="2" Text="13.05.2024" VerticalAlignment="Center"/></Grid>
+        </StackPanel>
+      </Border>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

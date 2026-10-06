@@ -1,0 +1,14 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.ProjectsView">
+  <ScrollViewer Margin="24,20,12,8">
+    <StackPanel>
+      <Grid ColumnDefinitions="*,Auto"><TextBlock Classes="h1" Text="Проекты"/></Grid>
+      <UniformGrid Columns="3">
+        <Border Classes="card"><StackPanel Spacing="10"><TextBlock Text="Avalonia UI Redesign" FontWeight="SemiBold"/><Border Classes="chip design"><TextBlock Text="Дизайн"/></Border><ProgressBar Value="65" Height="4" Foreground="#5B45D6"/><TextBlock Classes="muted" Text="65% · срок 30.05.2024"/></StackPanel></Border>
+        <Border Classes="card"><StackPanel Spacing="10"><TextBlock Text="Мобильное приложение" FontWeight="SemiBold"/><Border Classes="chip dev"><TextBlock Text="Разработка"/></Border><ProgressBar Value="40" Height="4" Foreground="#4F8DF7"/><TextBlock Classes="muted" Text="40% · срок 15.06.2024"/></StackPanel></Border>
+        <Border Classes="card"><StackPanel Spacing="10"><TextBlock Text="Корпоративный сайт" FontWeight="SemiBold"/><Border Classes="chip dev"><TextBlock Text="Разработка"/></Border><ProgressBar Value="80" Height="4" Foreground="#2FB464"/><TextBlock Classes="muted" Text="80% · срок 20.05.2024"/></StackPanel></Border>
+      </UniformGrid>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

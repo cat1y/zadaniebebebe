@@ -1,0 +1,10 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.CalendarView">
+  <StackPanel Margin="24,20,12,8">
+    <TextBlock Classes="h1" Text="Календарь"/>
+    <Border Classes="card" HorizontalAlignment="Left">
+      <Calendar DisplayDate="2024-05-15" SelectedDate="2024-05-15"/>
+    </Border>
+  </StackPanel>
+</UserControl>

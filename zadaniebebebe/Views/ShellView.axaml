@@ -1,0 +1,28 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.ShellView">
+
+  <Grid ColumnDefinitions="220,*">
+    <Border Background="{DynamicResource SidebarBrush}" BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,0" Padding="12">
+      <DockPanel>
+        <TextBlock DockPanel.Dock="Top" Text="Project Studio" FontWeight="SemiBold" Margin="8,4,0,20"/>
+
+        <StackPanel DockPanel.Dock="Bottom">
+          <Button x:Name="ProfileBtn" Classes="nav" Tag="profile" Click="Nav_Click" Content="Виктория Шестиперова"/>
+          <Button Classes="nav" Click="Logout_Click" Content="⇥  Выйти"/>
+        </StackPanel>
+
+        <StackPanel x:Name="NavPanel">
+          <Button Classes="nav" Tag="overview" Click="Nav_Click" Content="Обзор"/>
+          <Button Classes="nav" Tag="projects" Click="Nav_Click" Content="Проекты"/>
+          <Button Classes="nav" Tag="tasks" Click="Nav_Click" Content="Задачи"/>
+          <Button Classes="nav" Tag="calendar" Click="Nav_Click" Content="Календарь"/>
+          <Button Classes="nav" Tag="team" Click="Nav_Click" Content="Команда"/>
+          <Button Classes="nav" Tag="settings" Click="Nav_Click" Content="Настройки"/>
+        </StackPanel>
+      </DockPanel>
+    </Border>
+
+    <ContentControl x:Name="PageHost" Grid.Column="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+  </Grid>
+</UserControl>

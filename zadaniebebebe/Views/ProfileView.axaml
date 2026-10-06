@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.ProfileView">
+  <StackPanel Margin="24,20,12,8">
+    <TextBlock Classes="h1" Text="Личный кабинет"/>
+    <Border Classes="card" MaxWidth="500" HorizontalAlignment="Left">
+      <StackPanel Spacing="12">
+        <TextBlock Text="Виктория Шестиперова" FontSize="18" FontWeight="SemiBold"/>
+        <Grid ColumnDefinitions="110,*" RowDefinitions="Auto,Auto,Auto" RowSpacing="10">
+          <TextBlock Classes="muted" Text="ФИО"/><TextBlock Grid.Column="1" Text="Виктория Шестиперова"/>
+          <TextBlock Classes="muted" Grid.Row="1" Text="Email"/><TextBlock Grid.Row="1" Grid.Column="1" Text="vika.shestip@mail.ru"/>
+          <TextBlock Classes="muted" Grid.Row="2" Text="Должность"/><TextBlock Grid.Row="2" Grid.Column="1" Text="бебебе студентка"/>
+        </Grid>
+      </StackPanel>
+    </Border>
+  </StackPanel>
+</UserControl>

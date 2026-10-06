@@ -1,0 +1,13 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.TeamView">
+  <StackPanel Margin="24,20,12,8">
+    <TextBlock Classes="h1" Text="Команда"/>
+    <UniformGrid Columns="4">
+      <Border Classes="card"><StackPanel Spacing="4"><TextBlock Text="Иван Петров" FontWeight="SemiBold"/><TextBlock Classes="muted" Text="Руководитель"/></StackPanel></Border>
+      <Border Classes="card"><StackPanel Spacing="4"><TextBlock Text="Анна Смирнова" FontWeight="SemiBold"/><TextBlock Classes="muted" Text="Дизайнер"/></StackPanel></Border>
+      <Border Classes="card"><StackPanel Spacing="4"><TextBlock Text="Дмитрий Кузнецов" FontWeight="SemiBold"/><TextBlock Classes="muted" Text="Разработчик"/></StackPanel></Border>
+      <Border Classes="card"><StackPanel Spacing="4"><TextBlock Text="Елена Волкова" FontWeight="SemiBold"/><TextBlock Classes="muted" Text="Маркетолог"/></StackPanel></Border>
+    </UniformGrid>
+  </StackPanel>
+</UserControl>

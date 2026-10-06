@@ -1,0 +1,16 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="zadaniebebebe.Login">
+
+  <Grid Background="{DynamicResource BgBrush}">
+    <Border Classes="card" Padding="28" Margin="0" Width="360" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <StackPanel Spacing="12">
+        <TextBlock Text="Project Studio" FontSize="20" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+        <TextBlock Text="Войдите в аккаунт" Foreground="{DynamicResource MutedBrush}" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+        <TextBox Watermark="Логин" Padding="12,10"/>
+        <TextBox Watermark="Пароль" PasswordChar="•" Padding="12,10"/>
+        <Button Classes="primary" Content="Войти" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="Login_Click" Margin="0,8,0,0"/>
+      </StackPanel>
+    </Border>
+  </Grid>
+</UserControl>
